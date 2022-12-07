@@ -1,0 +1,77 @@
+{
+  "name": "tm/tooly-composer-script",
+  "description": "Simple composer script to manage phar files.",
+  "keywords": [
+    "composer",
+    "composer-script",
+    "phar-management",
+    "composer-phar",
+    "phar",
+    "phar-handling"
+  ],
+  "homepage": "https://github.com/tommy-muehle/tooly-composer-script",
+  "authors": [
+    {
+      "name": "Tommy Muehle",
+      "email": "tommy.muehle@gmail.com",
+      "homepage": "https://tommy-muehle.de"
+    }
+  ],
+  "support": {
+    "email": "tommy.muehle@gmail.com",
+    "issues": "https://github.com/tommy-muehle/tooly-composer-script/issues",
+    "docs": "https://github.com/tommy-muehle/tooly-composer-script/blob/master/README.md",
+    "source": "https://github.com/tommy-muehle/tooly-composer-script/tree/master"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Tooly\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tooly\\": "src/",
+      "Tooly\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=5.6.0"
+  },
+  "suggest": {
+    "tm/gpg-verifier": "Allows verification over GPG for PHAR tools."
+  },
+  "require-dev": {
+    "composer/composer": "1.*",
+    "symfony/console": "^3.0",
+    "mikey179/vfsstream": "1.6.*",
+    "php-mock/php-mock-phpunit": "1.1.*"
+  },
+  "scripts": {
+    "post-install-cmd": "Tooly\\ScriptHandler::installPharTools",
+    "post-update-cmd": "Tooly\\ScriptHandler::installPharTools"
+  },
+  "extra": {
+    "tools": {
+      "phpunit": {
+        "url": "https://phar.phpunit.de/phpunit-5.7.27.phar"
+      },
+      "phpcpd": {
+        "url": "https://phar.phpunit.de/phpcpd-2.0.4.phar"
+      },
+      "phpcs": {
+        "url": "https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar",
+        "force-replace": true
+      },
+      "phpmd": {
+        "url": "http://static.phpmd.org/php/latest/phpmd.phar",
+        "fallback-url": "https://github.com/jakzal/phpmd/releases/download/2.6.0-jakzal-2/phpmd.phar",
+        "force-replace": true
+      },
+      "security-checker": {
+        "url": "http://get.sensiolabs.org/security-checker.phar",
+        "force-replace": true
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "name": "dummy",
+    "description": "Dummy package",
+    "type": "extension",
+    "extra": {
+        "configure-options": []
+    }
+}

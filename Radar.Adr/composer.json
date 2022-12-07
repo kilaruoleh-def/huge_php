@@ -1,0 +1,31 @@
+{
+    "name": "radar/adr",
+    "description": "The Action-Domain-Responder core library for Radar.",
+    "type": "library",
+    "homepage": "https://github.com/radarphp/Radar.Adr",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.2.0",
+        "aura/di": "~4.0",
+        "aura/payload": "~3.0",
+        "aura/router": "~3.0",
+        "relay/relay": "~1.0",
+        "relay/middleware": "~1.0",
+        "arbiter/arbiter": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.1",
+        "laminas/laminas-diactoros":    "~2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Radar\\Adr\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Radar\\Adr\\": "tests/",
+            "Aura\\Di\\": "vendor/aura/di/tests/"
+        }
+    }
+}

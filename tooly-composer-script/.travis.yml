@@ -1,0 +1,33 @@
+language: php
+sudo: false
+branches:
+  except:
+    - experimental
+cache:
+  directories:
+    - $HOME/.composer/cache/files
+matrix:
+  include:
+    - php: 5.6
+    - php: 7.0
+    - php: 7.1
+    - php: 7.2
+    - php: nightly
+  allow_failures:
+    - php: 7.2
+    - php: nightly
+  fast_finish: true
+before_install:
+  - composer selfupdate
+install:
+  - composer update --no-interaction
+script:
+  - ./vendor/bin/phpunit.phar --coverage-clover build/logs/clover.xml
+notifications:
+  email: false
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/f5bcd59af82eb6dd98b3
+    on_success: always
+    on_failure: always
+    on_start: never

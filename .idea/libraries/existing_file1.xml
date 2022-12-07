@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="existing-file1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/grav/tests/fake/nested-site/user/pages/02.item2/02.item2-2/existing-file.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

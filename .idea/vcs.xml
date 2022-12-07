@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Aura.Router" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Buzz" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CssToInlineStyles" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Embed" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/FastRoute" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Goutte" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PHP-View" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Radar.Adr" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Slim-Skeleton" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Slim-Views" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cms" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/composed" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/crud" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/email-validator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/grav" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/guzzle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/installers" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/klein.php" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/laminas-diactoros" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/laravel-s" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/php-domain-parser" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/php-spider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pickle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prestissimo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/retrofit-php" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/satis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/silly" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/symfony-cmf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tooly-composer-script" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/uri" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/yii2" vcs="Git" />
+  </component>
+</project>

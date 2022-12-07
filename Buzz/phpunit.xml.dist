@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit backupGlobals="false" bootstrap="vendor/autoload.php" colors="true">
+    <testsuites>
+
+        <testsuite name="Unit">
+            <directory suffix="Test.php">./tests/Unit</directory>
+        </testsuite>
+        <testsuite name="Integration">
+            <directory suffix="Test.php">./tests/Integration</directory>
+        </testsuite>
+    </testsuites>
+
+    <php>
+        <server name="TEST_SERVER" value="http://127.0.0.1:10000/server.php" />
+        <server name="BUZZ_TEST_SERVER" value="http://127.0.0.1:8022/index.php" />
+    </php>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./lib/</directory>
+        </whitelist>
+    </filter>
+</phpunit>

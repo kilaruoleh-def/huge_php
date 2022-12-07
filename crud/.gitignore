@@ -1,0 +1,7 @@
+*.pyc
+docs/_build
+phpunit.xml
+vendor/
+composer.lock
+tmp
+.phpunit.result.cache

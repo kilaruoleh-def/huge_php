@@ -1,0 +1,28 @@
+{
+    "name": "joshdifabio/composed",
+    "description": "Easily parse your project's Composer configuration, and those of its dependencies, at runtime.",
+    "keywords": [ "composer", "dependency", "package" ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Josh Di Fabio",
+            "email": "joshdifabio@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Composed\\": "src"
+        },
+        "files": [
+            "src/functions_include.php"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    }
+}

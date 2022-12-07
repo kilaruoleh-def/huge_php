@@ -1,0 +1,7 @@
+/tests/pecl-website/*.log
+/vendor/
+/*.phar
+/.php_cs
+/.php_cs.cache
+/box.json
+/clover.xml

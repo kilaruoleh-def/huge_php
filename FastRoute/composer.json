@@ -1,0 +1,54 @@
+{
+    "name": "nikic/fast-route",
+    "description": "Fast request router for PHP",
+    "keywords": [
+        "routing",
+        "router"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Nikita Popov",
+            "email": "nikic@php.net"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0"
+    },
+    "require-dev": {
+        "doctrine/coding-standard": "^9.0",
+        "phpbench/phpbench": "^1.0",
+        "phpstan/extension-installer": "^1.0",
+        "phpstan/phpstan": "^0.12",
+        "phpstan/phpstan-deprecation-rules": "^0.12",
+        "phpstan/phpstan-phpunit": "^0.12",
+        "phpstan/phpstan-strict-rules": "^0.12",
+        "phpunit/phpunit": "^9.5"
+    },
+    "suggest": {
+        "ext-apcu": "To be able to use APCu cache driver"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "FastRoute\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FastRoute\\Benchmark\\": "benchmark/",
+            "FastRoute\\Test\\": "test/"
+        }
+    }
+}
